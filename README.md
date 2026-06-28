@@ -1,275 +1,353 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="color-scheme" content="dark" />
-<title>RPBazzar — FiveM MLO Marketplace | ESX, QB & QBOX Optimized</title>
-<meta name="description" content="RPBazzar is the FiveM mega mall — 660+ premium FiveM MLOs optimized for ESX, QB & QBOX. Instant download, drop & use on any FiveM server. Your FiveM MLO marketplace." />
-<link rel="canonical" href="https://rpbazzar.com/" />
+# 🎮 RPBazzar — Premium FiveM Assets & Scripts Marketplace
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="RPBazzar — FiveM MLO Marketplace | ESX, QB & QBOX Optimized" />
-<meta property="og:description" content="660+ premium FiveM MLOs. Instant download, drop & use on any FiveM server. ESX, QB & QBOX optimized." />
-<meta property="og:url" content="https://rpbazzar.com/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RPBazzar — FiveM MLO Marketplace" />
-<meta name="twitter:description" content="660+ premium FiveM MLOs. Drop & use on any FiveM server. ESX, QB & QBOX optimized." />
+### *One Marketplace. 1200+ FiveM MLOs. Endless RP Possibilities.*
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+**The largest FiveM MLO mega-mall for GTA 5 roleplay servers — 1200+ optimized interiors for ESX, QBCore, QB & QBOX frameworks. Drop-in ready. Instant download. Fully editable.**
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          canvas:'#0b0c0e','canvas-dark':'#06070a',card:'#101115',elevated:'#15171a',deep:'#06070a',
-          hairline:'#22262c','hairline-strong':'#2d3239','hairline-soft':'#1a1d22',
-          ink:'#f5f6f8',body:'#d6d8dd',charcoal:'#d6d8dd',slate:'#a8acb4',mute:'#a8acb4',
-          ash:'#8b9099',steel:'#8b9099',stone:'#6b7079',
-          'accent-orange':'#d0b070','accent-yellow':'#f59e0b','accent-blue':'#3772cf',
-          'accent-green':'#15a877','accent-red':'#e5484d',gold:'#d0b070','gold-deep':'#e6c889',
-          ok:'#15a877',warn:'#f59e0b',bad:'#e5484d'
-        },
-        fontFamily: {
-          serif:['Inter','-apple-system','system-ui','sans-serif'],
-          sans:['Inter','-apple-system','system-ui','sans-serif'],
-          mono:['"JetBrains Mono"','"SF Mono"','Menlo','Consolas','monospace']
-        },
-        letterSpacing: { display:'-0.025em', tightish:'-0.02em' }
-      }
-    }
-  };
-</script>
-<style>
-  :root{
-    color-scheme:dark;
-    --canvas:#0b0c0e;--canvas-dark:#06070a;--surface:#15171a;--surface-soft:#101115;--surface-code:#06070a;
-    --hairline:#22262c;--hairline-soft:#1a1d22;
-    --ink:#f5f6f8;--charcoal:#d6d8dd;--slate:#a8acb4;--steel:#8b9099;--stone:#6b7079;--muted:#4a4f57;
-    --brand-gold:#d0b070;--brand-gold-deep:#e6c889;--brand-gold-soft:rgba(208,176,112,0.12);
-    --brand-tag:#3772cf;--brand-annotate:#15a877;--brand-warn:#f59e0b;--brand-error:#e5484d;
-    --primary:#f5f6f8;--on-primary:#0a0d10;
-    --sans:"Inter",-apple-system,system-ui,sans-serif;
-    --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
-    --r-xs:4px;--r-sm:6px;--r-md:8px;--r-lg:12px;--r-xl:16px;--r-full:9999px;
-    --shadow-1:rgba(0,0,0,0.4) 0 1px 2px 0;
-  }
-  html,body{background:var(--canvas);}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;}
-  .font-serif{font-family:var(--sans);font-weight:600;}
+[Website](https://rpbazzar.com)
+[Products](https://rpbazzar.com/collections/all)
+[Collections](https://rpbazzar.com/collections)
+[Frameworks](https://rpbazzar.com)
+[Payment](https://rpbazzar.com/cart)
+[License](#license)
 
-  .glow-orange{background:
-    radial-gradient(ellipse 900px 320px at 15% 30%,rgba(208,176,112,0.22),transparent 60%),
-    radial-gradient(ellipse 700px 280px at 85% 60%,rgba(208,176,112,0.10),transparent 60%),
-    radial-gradient(ellipse 600px 220px at 50% 100%,rgba(208,176,112,0.06),transparent 60%);}
+[🌐 Visit Website](https://rpbazzar.com) · [🛒 Browse All MLOs](https://rpbazzar.com/collections/all) · [📚 Guides](https://rpbazzar.com/blogs/guide) · [🛠️ Developer Tools](https://rpbazzar.com/collections/tools)
 
-  *::-webkit-scrollbar{width:6px;height:6px;}
-  *::-webkit-scrollbar-track{background:transparent;}
-  *::-webkit-scrollbar-thumb{background:var(--hairline);border-radius:6px;}
-  *::-webkit-scrollbar-thumb:hover{background:#2d3239;}
+---
 
-  .pill{display:inline-flex;align-items:center;font-size:11px;letter-spacing:0.02em;padding:3px 10px;border-radius:var(--r-full);font-weight:600;}
 
-  .btn-primary{background:var(--primary);color:var(--on-primary);border:1px solid transparent;border-radius:var(--r-full);padding:11px 22px;font-size:14px;font-weight:600;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .12s ease;cursor:pointer;text-decoration:none;}
-  .btn-primary:hover{background:#e8eaee;}
-  .btn-gold{background:var(--brand-gold);color:#0a0a0a;border:1px solid transparent;border-radius:var(--r-full);padding:11px 22px;font-size:14px;font-weight:600;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .12s ease;cursor:pointer;text-decoration:none;}
-  .btn-gold:hover{background:var(--brand-gold-deep);}
-  .btn-ghost{background:var(--surface);color:var(--ink);border:1px solid var(--hairline);border-radius:var(--r-full);padding:11px 20px;font-size:14px;font-weight:500;line-height:1;transition:all .12s ease;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
-  .btn-ghost:hover{border-color:var(--ink);}
 
-  .card-base{background:var(--surface-soft);border:1px solid var(--hairline);border-radius:var(--r-lg);}
-  .card-link{transition:border-color .12s,box-shadow .12s,transform .12s;text-decoration:none;display:block;}
-  .card-link:hover{border-color:rgba(208,176,112,0.55);box-shadow:0 0 0 1px rgba(208,176,112,0.25) inset;transform:translateY(-2px);}
+## 📖 Table of Contents
 
-  .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--steel);}
-  code.inline{font-family:var(--mono);font-size:12px;color:var(--brand-gold);background:rgba(208,176,112,0.08);padding:1px 6px;border-radius:4px;}
-  .row-divider{border-top:1px solid var(--hairline);}
-  a{color:inherit;}
-</style>
-</head>
-<body class="min-h-screen">
+- [About](#-about)
+- [✨ Key Features](#-key-features)
+- [🧱 Tech Stack](#-tech-stack)
+- [🗂️ Collections](#-collections)
+- [💰 Pricing](#-pricing)
+- [🗺️ Site Structure](#️-site-structure)
+- [🚀 Getting Started](#-getting-started)
+- [🔧 For FiveM Developers](#-for-fivem-developers)
+- [📈 Roadmap](#-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📄 License & Policies](#-license--policies)
+- [💬 Contact & Links](#-contact--links)
+- [🙏 Acknowledgments](#-acknowledgments)
 
-<!-- ============ HERO ============ -->
-<section class="relative overflow-hidden">
-  <div class="glow-orange absolute inset-x-0 top-0 h-[600px] pointer-events-none"></div>
-  <div class="relative px-6 sm:px-8 pt-8 pb-16 max-w-[1100px] mx-auto">
+---
 
-    <!-- top bar -->
-    <header class="flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="font-serif text-2xl tracking-tight">RPBazzar<span class="text-accent-orange">.</span></div>
-        <span class="text-xs text-ash hidden sm:inline">FiveM MLO Marketplace</span>
-      </div>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="btn-ghost text-[13px] py-2 px-4">Visit store →</a>
-    </header>
 
-    <!-- hero copy -->
-    <div class="mt-16 max-w-3xl">
-      <div class="flex flex-wrap items-center gap-2 mb-6">
-        <span class="pill bg-bad/15 text-bad border border-bad/40">ESX</span>
-        <span class="pill bg-accent-blue/15 text-accent-blue border border-accent-blue/40">QB</span>
-        <span class="pill bg-accent-green/15 text-accent-green border border-accent-green/40">QBOX</span>
-        <span class="pill bg-white/5 text-charcoal border border-hairline-strong">Drop &amp; Use</span>
-      </div>
-      <h1 class="font-serif text-[44px] sm:text-[64px] md:text-[76px] leading-[1.0] tracking-display">
-        The FiveM<br/><span class="text-accent-orange">mega mall.</span>
-      </h1>
-      <p class="mt-6 max-w-xl text-body text-[17px] leading-[1.55]">
-        660+ premium <strong class="text-ink">FiveM MLOs</strong> — banks, clubs, restaurants, gang hideouts, police stations &amp; more.
-        Optimized for ESX, QB &amp; QBOX. Instant download, drop &amp; use on any FiveM server.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center gap-3">
-        <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="btn-gold">Browse all MLOs →</a>
-        <a href="https://rpbazzar.com/collections" target="_blank" rel="noopener" class="btn-ghost">View collections</a>
-      </div>
-      <p class="mt-4 text-xs text-stone font-mono">// every MLO from <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="text-accent-orange hover:underline">rpbazzar.com</a></p>
-    </div>
-  </div>
-</section>
 
-<div class="px-6 sm:px-8 pb-28 max-w-[1100px] mx-auto space-y-20">
+## 🎯 About
 
-  <!-- ============ STATS ============ -->
-  <section>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-      <div class="bg-deep border border-hairline rounded-lg p-4">
-        <div class="text-[10px] uppercase tracking-[0.1em] text-ash">FiveM MLOs</div>
-        <div class="font-serif text-[34px] leading-none mt-1 tracking-tightish text-accent-orange">660+</div>
-      </div>
-      <div class="bg-deep border border-hairline rounded-lg p-4">
-        <div class="text-[10px] uppercase tracking-[0.1em] text-ash">Collections</div>
-        <div class="font-serif text-[34px] leading-none mt-1 tracking-tightish">100</div>
-      </div>
-      <div class="bg-deep border border-hairline rounded-lg p-4">
-        <div class="text-[10px] uppercase tracking-[0.1em] text-ash">Frameworks</div>
-        <div class="font-serif text-[34px] leading-none mt-1 tracking-tightish text-accent-green">3</div>
-      </div>
-      <div class="bg-deep border border-hairline rounded-lg p-4">
-        <div class="text-[10px] uppercase tracking-[0.1em] text-ash">Delivery</div>
-        <div class="font-serif text-[34px] leading-none mt-1 tracking-tightish text-accent-blue">Instant</div>
-      </div>
-    </div>
-  </section>
+**RPBazzar** is a premium digital marketplace dedicated exclusively to **FiveM MLO assets** for Grand Theft Auto V roleplay servers. Founded to solve the fragmented, hard-to-discover nature of FiveM content across forums and Discord marketplaces, RPBazzar brings together a curated catalog of **1200+ high-quality GTA 5 interiors** under a single, easy-to-navigate Shopify-powered storefront.
 
-  <!-- ============ WHY ============ -->
-  <section class="space-y-8">
-    <div class="border-b border-hairline pb-3">
-      <div class="eyebrow">Why RPBazzar</div>
-      <h2 class="font-serif text-[28px] leading-none mt-1 tracking-tightish">Built for FiveM server owners</h2>
-    </div>
-    <div class="grid sm:grid-cols-3 gap-4">
-      <div class="card-base p-6">
-        <div class="font-serif text-[18px] text-ink">⚡ Drop &amp; Use</div>
-        <p class="mt-2 text-[14px] text-body leading-relaxed">No headaches. Download, drop into <code class="inline">resources/[mlos]</code>, and go live on any FiveM server.</p>
-      </div>
-      <div class="card-base p-6">
-        <div class="font-serif text-[18px] text-ink">🚀 Performance-first</div>
-        <p class="mt-2 text-[14px] text-body leading-relaxed">Every MLO is optimized for high performance so your server stays smooth under load.</p>
-      </div>
-      <div class="card-base p-6">
-        <div class="font-serif text-[18px] text-ink">📦 Instant download</div>
-        <p class="mt-2 text-[14px] text-body leading-relaxed">Pay once, download instantly. No waiting, no DMs — just your MLO, ready to deploy.</p>
-      </div>
-    </div>
-  </section>
+Every asset in the catalog is built or vetted for compatibility with the four most popular FiveM roleplay frameworks — **ESX**, **QBCore**, **QB**, and **QBOX** — so server owners can browse, purchase, drop the files into their server resource folder, and immediately enrich their world with new roleplay locations. Whether you need a fully modeled police station, a luxury penthouse for your mayor, an underground drug lab for your criminal syndicate, or a neon nightclub for nightlife events, RPBazzar offers ready-to-use interiors at consistent, accessible price points.
 
-  <!-- ============ CATEGORIES ============ -->
-  <section class="space-y-8">
-    <div class="border-b border-hairline pb-3">
-      <div class="eyebrow">Browse</div>
-      <h2 class="font-serif text-[28px] leading-none mt-1 tracking-tightish">Popular MLO categories</h2>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🏦 Banks &amp; Heists</div>
-        <div class="text-[12px] text-ash mt-1">High-stakes robbery MLOs</div>
-      </a>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🍸 Nightclubs &amp; Bars</div>
-        <div class="text-[12px] text-ash mt-1">Lounges, clubs, venues</div>
-      </a>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🍔 Restaurants &amp; Food</div>
-        <div class="text-[12px] text-ash mt-1">Food court &amp; diners</div>
-      </a>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🚔 Police &amp; Gov</div>
-        <div class="text-[12px] text-ash mt-1">Stations, training, MRPD</div>
-      </a>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🔫 Gang Hideouts</div>
-        <div class="text-[12px] text-ash mt-1">Bases, exteriors, turf</div>
-      </a>
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="card-base card-link p-5">
-        <div class="font-serif text-[17px] text-ink">🏠 Apartments &amp; Homes</div>
-        <div class="text-[12px] text-ash mt-1">Interiors &amp; living spaces</div>
-      </a>
-    </div>
-    <p class="text-center text-[13px] text-stone">
-      ...and 90+ more collections at <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="text-accent-orange hover:underline font-medium">rpbazzar.com</a>
-    </p>
-  </section>
+Beyond pure asset sales, RPBazzar also publishes free guides (such as the popular **"How to Install a QBCore Server on Localhost (Windows)"** tutorial) and ships developer tools like the **YTD Studio — FiveM GTA V Texture Editor & Repack Tool**, making it a one-stop hub for both server owners and FiveM content creators.
 
-  <!-- ============ COMPAT ============ -->
-  <section class="space-y-8">
-    <div class="border-b border-hairline pb-3">
-      <div class="eyebrow">Compatibility</div>
-      <h2 class="font-serif text-[28px] leading-none mt-1 tracking-tightish">Works with your framework</h2>
-    </div>
-    <div class="card-base p-8">
-      <p class="text-body text-[15px] max-w-2xl">
-        Every MLO on <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="text-accent-orange hover:underline">RPBazzar</a>
-        is built and tested for the three frameworks running most FiveM roleplay servers:
-      </p>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <span class="pill bg-bad/15 text-bad border border-bad/40" style="font-size:13px;padding:6px 14px;">ESX</span>
-        <span class="pill bg-accent-blue/15 text-accent-blue border border-accent-blue/40" style="font-size:13px;padding:6px 14px;">QB-Core</span>
-        <span class="pill bg-accent-green/15 text-accent-green border border-accent-green/40" style="font-size:13px;padding:6px 14px;">QBOX</span>
-      </div>
-      <div class="mt-6 font-mono text-[13px] text-charcoal bg-deep border border-hairline rounded-md p-4 overflow-x-auto">
-        <span class="text-stone"># drop into your server</span><br/>
-        C:\fivem\server-data\resources\[mlos]\your_new_mlo<br/>
-        <span class="text-stone"># then add to server.cfg</span><br/>
-        <span class="text-accent-green">ensure</span> your_new_mlo
-      </div>
-    </div>
-  </section>
+> 🌐 **Live site:** [https://rpbazzar.com](https://rpbazzar.com)
+> 🏪 **Total catalog:** 1200+ MLOs across 100+ curated collections
+> 🌍 **Served to:** 200+ countries (multi-currency support, USD default)
 
-  <!-- ============ CTA ============ -->
-  <section>
-    <div class="card-base p-10 text-center relative overflow-hidden">
-      <div class="glow-orange absolute inset-0 pointer-events-none opacity-70"></div>
-      <div class="relative">
-        <h2 class="font-serif text-[32px] sm:text-[40px] leading-tight tracking-tightish">Ready to build your city?</h2>
-        <p class="mt-4 text-body text-[16px] max-w-lg mx-auto">
-          Browse 660+ optimized FiveM MLOs and deploy in minutes. Instant download, drop &amp; use.
-        </p>
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="btn-gold">Shop RPBazzar →</a>
-          <a href="https://rpbazzar.com/collections" target="_blank" rel="noopener" class="btn-ghost">Explore collections</a>
-        </div>
-      </div>
-    </div>
-  </section>
+---
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="row-divider pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone">
-    <div>
-      <span class="font-serif text-ink">RPBazzar<span class="text-accent-orange">.</span></span>
-      &nbsp;— Your FiveM Mega Mall ·
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="text-accent-orange hover:underline">rpbazzar.com</a>
-    </div>
-    <div class="flex items-center gap-4">
-      <a href="https://rpbazzar.com" target="_blank" rel="noopener" class="hover:text-ink">Store</a>
-      <a href="https://rpbazzar.com/collections" target="_blank" rel="noopener" class="hover:text-ink">Collections</a>
-    </div>
-  </footer>
 
-</div>
-</body>
-</html>
+
+## ✨ Key Features
+
+
+
+### 🛒 Marketplace Experience
+
+- **Curated Mega-Mall** — 1200+ premium GTA 5 interiors organized into 100+ themed collections, from Police Stations to Hidden Locations.
+- **Instant Digital Delivery** — All purchases are downloadable immediately after checkout. No waiting, no shipping.
+- **Drop & Use Architecture** — Assets are pre-configured for ESX, QBCore, QB, and QBOX. Drop the resource into your `resources` folder, ensure it in `server.cfg`, and play.
+- **Fully Editable Files** — Every MLO is sold unlocked, so developers can reskin, remodel, or extend interiors.
+- **Powerful Search & Sort** — Sort by featured, best selling, alphabetical, price, or newest. Filter by collection and category.
+- **Multi-Currency & Global** — Native pricing in USD with country selectors for 200+ countries.
+
+
+
+### 🎨 Content Quality
+
+- **Optimized Geometry** — Interiors are built for performance, with proper LOD levels and draw-distance tuning to keep server FPS stable.
+- **Consistent Numbering Scheme** — Each collection uses a numbered scheme (e.g., `Police Station #056`, `House #086`) so you can easily reference, reorder, and replace assets as your server evolves.
+- **Framework-Aware Metadata** — Product pages clearly indicate which FiveM frameworks the asset supports.
+- **Sale Pricing Across Catalog** — Standardized promotional pricing keeps the catalog predictable for buyers.
+
+
+
+### 🧰 Developer-Friendly Additions
+
+- **YTD Studio Tool** — A dedicated FiveM GTA V texture editor and repack tool for advanced modders (sold separately).
+- **Step-by-Step Guides** — Free long-form tutorials in the `/blogs/guide` section cover QBCore localhost setup, server migration, and more.
+- **Tools For Developers Section** — A dedicated nav lane so builders can quickly find utilities versus playable MLOs.
+
+
+
+### 🛡️ Commerce & Trust
+
+- **PayPal Checkout** — Secure, globally recognized payment processor with buyer protection.
+
+---
+
+
+
+## 🗂️ Collections
+
+RPBazzar organizes 1200+ MLOs into 100+ thematic collections. Below is the complete catalog with current item counts, sorted by category size.
+
+### 🏙️ Civic & Public Infrastructure
+
+
+| Collection         | Items | Link                                                                                                   |
+| ------------------ | ----- | ------------------------------------------------------------------------------------------------------ |
+| 🚓 Police Stations | 56    | [/collections/gta5-fivem-police-stations](https://rpbazzar.com/collections/gta5-fivem-police-stations) |
+| 🏥 Hospitals       | 18    | [/collections/gta5-fivem-hospitals](https://rpbazzar.com/collections/gta5-fivem-hospitals)             |
+| 🏦 Banks           | 18    | [/collections/gta5-fivem-banks](https://rpbazzar.com/collections/gta5-fivem-banks)                     |
+| 🏛️ City Halls     | 15    | [/collections/gta5-fivem-city-hall](https://rpbazzar.com/collections/gta5-fivem-city-hall)             |
+| 🏛️ Legion Square  | 22    | [/collections/gta5-fivem-legion-square](https://rpbazzar.com/collections/gta5-fivem-legion-square)     |
+
+
+
+
+### 🏠 Residential
+
+
+| Collection         | Items | Link                                                                                                   |
+| ------------------ | ----- | ------------------------------------------------------------------------------------------------------ |
+| 🏠 Houses          | 86    | [/collections/gta5-fivem-houses](https://rpbazzar.com/collections/gta5-fivem-houses)                   |
+| 🏰 Mansions        | 42    | [/collections/gta5-fivem-mansion](https://rpbazzar.com/collections/gta5-fivem-mansion)                 |
+| 🏢 Apartments      | 20    | [/collections/gta5-fivem-apartments](https://rpbazzar.com/collections/gta5-fivem-apartments)           |
+| 🌆 Penthouses      | 7     | [/collections/gta5-fivem-penthouse](https://rpbazzar.com/collections/gta5-fivem-penthouse)             |
+| 🏡 House Exteriors | 9     | [/collections/gta5-fivem-house-exteriors](https://rpbazzar.com/collections/gta5-fivem-house-exteriors) |
+
+
+
+
+### 🎭 Entertainment & Nightlife
+
+
+| Collection         | Items | Link                                                                                               |
+| ------------------ | ----- | -------------------------------------------------------------------------------------------------- |
+| 🍔 Food Courts     | 110   | [/collections/gta5-fivem-food-courts](https://rpbazzar.com/collections/gta5-fivem-food-courts)     |
+| 🎉 Nightclubs      | 45    | [/collections/gta5-fivem-nightclubs](https://rpbazzar.com/collections/gta5-fivem-nightclubs)       |
+| 🎰 Casinos         | 9     | [/collections/gta5-fivem-casinos](https://rpbazzar.com/collections/gta5-fivem-casinos)             |
+| 🎬 Cinemas         | 4     | [/collections/gta5-fivem-cinemas](https://rpbazzar.com/collections/gta5-fivem-cinemas)             |
+| 🕹️ Arcade Shops   | 4     | [/collections/gta5-fivem-arcade-shop](https://rpbazzar.com/collections/gta5-fivem-arcade-shop)     |
+| 🏟️ Arenas         | 6     | [/collections/gta5-fivem-arenas](https://rpbazzar.com/collections/gta5-fivem-arenas)               |
+| 🥊 Boxing Rings    | 10    | [/collections/gta5-fivem-boxing-rings](https://rpbazzar.com/collections/gta5-fivem-boxing-rings)   |
+| ⚽ Sports Courts    | 7     | [/collections/gta5-fivem-sports-courts](https://rpbazzar.com/collections/gta5-fivem-sports-courts) |
+| 🏋️ Gyms & Fitness | 5     | [/collections/gta5-fivem-gyms-fitness](https://rpbazzar.com/collections/gta5-fivem-gyms-fitness)   |
+| 🍸 Bars            | 11    | [/collections/gta5-fivem-bars](https://rpbazzar.com/collections/gta5-fivem-bars)                   |
+
+
+
+
+### 🚗 Vehicles & Mobility
+
+
+| Collection        | Items | Link                                                                                                 |
+| ----------------- | ----- | ---------------------------------------------------------------------------------------------------- |
+| 🔧 Mechanic Shops | 67    | [/collections/gta5-fivem-mechanic-shops](https://rpbazzar.com/collections/gta5-fivem-mechanic-shops) |
+| 🚙 Vehicle Shops  | 19    | [/collections/gta5-fivem-vehicle-shops](https://rpbazzar.com/collections/gta5-fivem-vehicle-shops)   |
+
+
+
+
+### 💼 Businesses & Stores
+
+
+| Collection             | Items | Link                                                                                                       |
+| ---------------------- | ----- | ---------------------------------------------------------------------------------------------------------- |
+| 🏪 Other Stores        | 21    | [/collections/gta5-fivem-other-store](https://rpbazzar.com/collections/gta5-fivem-other-store)             |
+| 🛒 24-7 Stores         | 15    | [/collections/gta5-fivem-24-7-store](https://rpbazzar.com/collections/gta5-fivem-24-7-store)               |
+| 🔫 Ammunation Stores   | 5     | [/collections/gta5-fivem-ammunation-store](https://rpbazzar.com/collections/gta5-fivem-ammunation-store)   |
+| 🌿 Weed Stores         | 9     | [/collections/gta5-fivem-weed-store](https://rpbazzar.com/collections/gta5-fivem-weed-store)               |
+| 🕳️ Blackmarket Stores | 2     | [/collections/gta5-fivem-blackmarket-store](https://rpbazzar.com/collections/gta5-fivem-blackmarket-store) |
+
+
+
+
+### ⚠️ Criminal & Hidden
+
+
+| Collection                   | Items | Link                                                                                                                   |
+| ---------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------- |
+| 🔫 Gang Hideouts             | 84    | [/collections/gta5-fivem-gang-mlo](https://rpbazzar.com/collections/gta5-fivem-gang-mlo)                               |
+| 🤫 Secret Locations          | 38    | [/collections/gta5-fivem-hidden-location](https://rpbazzar.com/collections/gta5-fivem-hidden-location)                 |
+| 💣 Drug Labs                 | 18    | [/collections/gta5-fivem-drug-labs](https://rpbazzar.com/collections/gta5-fivem-drug-labs)                             |
+| 🎭 Heist & Robbery Locations | 10    | [/collections/gta5-fivem-heist-robbery-locations](https://rpbazzar.com/collections/gta5-fivem-heist-robbery-locations) |
+| 🚧 Bunkers                   | 7     | [/collections/gta5-fivem-bunker](https://rpbazzar.com/collections/gta5-fivem-bunker)                                   |
+
+
+
+
+### 🌊 Scenic & Specialty
+
+
+| Collection            | Items | Link                                                                                                     |
+| --------------------- | ----- | -------------------------------------------------------------------------------------------------------- |
+| 🏖️ Beach Sided Areas | 10    | [/collections/gta5-fivem-beach-sided-area](https://rpbazzar.com/collections/gta5-fivem-beach-sided-area) |
+| 🏝️ Del Perico        | 3     | [/collections/gta5-fivem-del-perico](https://rpbazzar.com/collections/gta5-fivem-del-perico)             |
+| ⛏️ Mining Sites       | 1     | [/collections/gta5-fivem-mining-sites](https://rpbazzar.com/collections/gta5-fivem-mining-sites)         |
+| 💃 Girls Haven        | 7     | [/collections/gta5-fivem-girls-haven](https://rpbazzar.com/collections/gta5-fivem-girls-haven)           |
+
+
+
+
+### 🛠️ Developer Tools
+
+
+| Collection | Items | Link                                                         |
+| ---------- | ----- | ------------------------------------------------------------ |
+| 🧰 Tools   | 1     | [/collections/tools](https://rpbazzar.com/collections/tools) |
+
+
+## 💰 Pricing
+
+RPBazzar uses a simple, transparent pricing model with sale pricing applied across the catalog.
+
+
+| Tier               | Standard Price | Sale Price | Coverage                                                        |
+| ------------------ | -------------- | ---------- | --------------------------------------------------------------- |
+| 🎮 Standard MLO    | $12.99         | **$9.99**  | 95%+ of the catalog (houses, nightclubs, police stations, etc.) |
+| 🏠 Premium Mansion | $12.00         | **$9.99**  | Selected mansion-tier interiors                                 |
+| 🧰 Developer Tool  | $50.00         | **$39.00** | YTD Studio — FiveM GTA V Texture Editor & Repack Tool           |
+
+
+- All prices in **USD**. Local currency conversion is shown automatically based on the visitor's country.
+- **No subscriptions, no recurring fees** — pay once, download forever.
+
+---
+
+
+
+## 🚀 Getting Started
+
+RPBazzar is a hosted marketplace — there is nothing to install to browse or buy. To use the assets you purchase on your FiveM server, follow the standard FiveM resource installation flow.
+
+### 1. Browse & Purchase
+
+1. Visit **[rpbazzar.com](https://rpbazzar.com)**.
+2. Open **Collections** or **Products** from the navigation.
+3. Filter by category (e.g., *Police Stations*), sort by price or featured, and add items to cart.
+4. Checkout securely with **PayPal**. Files are delivered as instant downloads.
+
+
+
+### 2. Install a FiveM MLO on Your Server
+
+> 💡 Full step-by-step tutorial: **[How to Install a QBCore Server on Localhost (Windows)](https://rpbazzar.com/blogs/guide)** — covers server setup from scratch before adding MLOs.
+
+```bash
+# After downloading your MLO archive from RPBazzar:
+
+# 1. Extract the archive — it typically contains a single resource folder
+#    e.g., `[police-station-056]` or `police_station_056`
+
+# 2. Place the resource folder inside your FiveM server's resources directory
+cp -r police-station-056 /path/to/server/resources/[mlos]
+
+# 3. Add an ensure line to your server.cfg
+echo "ensure police-station-056" >> /path/to/server/server.cfg
+
+# 4. Restart your server (or run `ensure police-station-056` in the live console)
+```
+
+
+
+### 3. Verify In-Game
+
+1. Launch FiveM and connect to your server.
+2. Use the in-game coordinate command (e.g., `/tp` or your framework's teleport command) to navigate to the MLO's entrance coordinates — listed on each product page.
+3. Walk inside. If the interior loads, you're done. 🎉
+
+
+
+### Framework Compatibility Notes
+
+- **ESX** — Most MLOs work out of the box. If a garage/stash is referenced, hook it up to `esx_property` or your custom property resource.
+- **QBCore / QB / QBOX** — Same drop-in pattern. Coordinates can be added to `qb-shops`, `qb-bossmenu`, or your gang/property resource as needed.
+- **Locked files?** — All RPBazzar MLOs are sold **unlocked**, so you can edit `.ymap`, `.ytyp`, and prop placements in CodeWalker or GIMS Evo without restriction.
+
+---
+
+
+
+## 🔧 For FiveM Developers
+
+RPBazzar is also a resource for **content creators**, not just server owners.
+
+### YTD Studio — FiveM GTA V Texture Editor & Repack Tool
+
+A standalone Windows utility for repacking `.ytd` texture dictionaries, swapping textures in bulk, and optimizing FiveM texture streaming. Sold separately at **$39** (regularly $50).
+
+🔗 [View on RPBazzar](https://rpbazzar.com/collections/tools)
+
+### Free Guides
+
+The **Guide blog** publishes long-form, beginner-friendly tutorials:
+
+- ✅ *How to Install a QBCore Server on Localhost (Windows)* — full `txAdmin` walkthrough, localhost testing, and migration to a live host.
+- ✅ More guides published on an ongoing basis.
+
+🔗 [Read the Guides](https://rpbazzar.com/blogs/guide)
+
+### Contribution Opportunities
+
+If you build FiveM content (MLOs, scripts, textures) and want to sell through RPBazzar, reach out via the [Contact Information](#-contact--links) section below. The marketplace actively expands its catalog with vetted creator submissions.
+
+---
+
+
+
+## 📈 Roadmap
+
+Planned and in-progress improvements to the RPBazzar storefront and catalog.
+
+### ✅ Shipped
+
+- [x] Shopify storefront with 100+ themed collections
+- [x] PayPal accelerated checkout
+- [x] Account system (wishlist, orders, profile, addresses)
+- [x] Country/currency selector (200+ countries)
+- [x] Predictive search in header
+- [x] Cart notification + sticky header UX
+- [x] Guide blog with QBCore localhost tutorial
+- [x] YTD Studio developer tool listing
+
+---
+
+## 💬 Contact & Links
+
+
+
+### 🌐 Official Channels
+
+
+| Channel             | URL                                                                              |
+| ------------------- | -------------------------------------------------------------------------------- |
+| 🛒 Website          | [https://rpbazzar.com](https://rpbazzar.com)                                     |
+| 🛍️ All Products    | [https://rpbazzar.com/collections/all](https://rpbazzar.com/collections/all)     |
+| 📚 Guides Blog      | [https://rpbazzar.com/blogs/guide](https://rpbazzar.com/blogs/guide)             |
+| 📰 News Blog        | [https://rpbazzar.com/blogs/news](https://rpbazzar.com/blogs/news)               |
+| 🛠️ Developer Tools | [https://rpbazzar.com/collections/tools](https://rpbazzar.com/collections/tools) |
+| 👤 Account          | [https://rpbazzar.com/account](https://rpbazzar.com/account)                     |
+| 🛒 Cart             | [https://rpbazzar.com/cart](https://rpbazzar.com/cart)                           |
+
+
+
+
+### 📬 Support
+
+For purchase issues, refund requests, licensing questions, or asset submissions, use the **Contact Information** page linked in the footer of [rpbazzar.com](https://rpbazzar.com). For documentation corrections on this repository, please open a GitHub Issue or Pull Request directly.
+
+---
+
+### 🎮 Ready to level up your FiveM server?
+
+[Browse MLOs](https://rpbazzar.com/collections/all)
+[Read Guides](https://rpbazzar.com/blogs/guide)
+
+**Made with ❤️ for the FiveM roleplay community.**
